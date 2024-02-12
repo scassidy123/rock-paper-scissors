@@ -1,0 +1,117 @@
+* {
+    font-family: 'Montserrat';
+    background-color: black;
+    background-image:
+    url("ninja-flat-background-vignette2.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.navBar {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 0px 0px 0px;
+    flex-wrap: wrap; /* Allow navbar items to wrap */
+
+}
+
+.navBar .navItems {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 0px 0px 0px;
+}
+
+.navBar p {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding: 10px; /* Increase tap target size for better mobile interaction */
+
+
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 32px;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.title h1 {
+    margin: 20px 0px 0px 0px;
+    font-weight: 900;
+    text-align: center; /* Center titles on smaller screens */
+    flex-wrap: wrap;
+
+}
+
+.title h2 {
+    margin: 0px 0px 20px 0px;
+    font-family: 'Caveat';font-size: 96px;
+    text-align: center; /* Center titles on smaller screens */
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .rock {
+    margin-top: 100px;
+}
+
+.container .scissors {
+    margin-top: 30px;
+}
+.container .paper {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.container img:hover::before {
+  }
+  
+.container img:hover {
+    transform: scale(1.1);
+    background-color: transparent;
+    background-image: none;
+  } 
+
+.score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score p {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 24px; /* Smaller font size on smaller screens */
+    }
+
+    .title h2 {
+        font-size: 72px; /* Adjust h2 size for smaller screens */
+    }
+
+    .container {
+        flex-direction: column; /* Stack images vertically on small screens */
+    }
+
+    .container img {
+        width: 100%; /* Scale images to fit container */
+        max-width: 200px; /* Limit image size */
+        margin: 10px auto; /* Center and add space around images */
+    }
+}
