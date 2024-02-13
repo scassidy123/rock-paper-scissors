@@ -75,9 +75,6 @@
     margin-right: 20px;
 }
 
-.container img:hover::before {
-  }
-  
 .container img:hover {
     transform: scale(1.1);
     background-color: transparent;
@@ -94,6 +91,30 @@
     font-size: 24px;
     font-weight: 700;
     color: white;
+}
+
+.scoreboard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    font-family: 'Caveat';font-size: 46px;
+}
+
+.scoreboard p {
+    color: white;
+    font-family: 'Caveat';font-size: 46px;
+}
+
+.winState {
+    display: flex;
+    justify-content: center;
+}
+
+#winOrLose {
+    color: white;
+    font-size: 48px;
+    margin-top: 0px;
 }
 
 @media (max-width: 768px) {

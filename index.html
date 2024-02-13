@@ -5,7 +5,7 @@
     <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js2.js"></script>
+    <script src="js2.js" defer></script>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <title>Rock.Paper.Scissors.Shoot.</title>
 </head>
@@ -16,8 +16,6 @@
             <div class="navItems">
                 <p>Main</p>
                 <p>About</p>
-                <p>Price</p>
-                <p>Contact</p>
             </div>
         </div>
     </div>
@@ -28,13 +26,20 @@
         </div>
     </div>
     <div class="container">
-        <img class="rock" src="rock.png">
-        <img class="paper" src="paper.png">
-        <img class="scissors" src="scissors.png">
+        <img id="rock" class="rock" src="rock.png">
+        <img id="paper" class="paper" src="paper.png">
+        <img id="scissors" class="scissors" src="scissors.png">
     </div>
     <div class="score">
-        <p>Ninja played: </p>
-        <p>You played: </p>
+        <p id="playerPlayed">You played: </p>
+        <p id="ninjaPlayed">Ninja played: </p>
+    </div>
+    <div class="scoreboard">
+        <p id="ninjaCurrentScore">0, Ninja.</p>
+        <p id="playerCurrentScore">0, You.</p>
+    </div>
+    <div class="winState">
+        <p id="winOrLose"></p>
     </div>
 </body>
 </html>
